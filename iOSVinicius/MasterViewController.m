@@ -38,8 +38,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-    //Call the Hub animated
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //[MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     //Download data Download.h
     //TODO internet check
@@ -78,8 +77,7 @@
          }
      }];
     
-    //Dissmiss the Hub animated
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    //[MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
