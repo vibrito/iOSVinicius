@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Define.h"
 
 @interface DetailViewController : UIViewController
+{
+    __weak IBOutlet UILabel *labelTitle;
+    __weak IBOutlet UILabel *labelWebSite;
+    __weak IBOutlet UILabel *labelAuthor;
+    __weak IBOutlet UILabel *labelDate;
+    __weak IBOutlet UIImageView *imageViewThumb;
+}
 
-@property (strong, nonatomic) id detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) News *news;
+@property (weak, nonatomic) IBOutlet UITextView *textViewContent;
 
 @end
 
